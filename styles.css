@@ -1,0 +1,41 @@
+/* Start of my css file! */
+/*************************/
+
+/* Edit the body */
+/* body {
+    background-color: lightcyan;
+}*/
+
+/* Using CSS Variables with Fallback */
+:root {
+    --primary-color: #db34c2; 
+   --fallback-color: #c5c844; 
+}
+
+/* All h2 headers change color */
+h2 {
+    color: rgb(57, 32, 140);
+}  
+
+/* h3 edits */
+h3 {
+    color: hsl(9, 90%, 64%); 
+}
+
+/* h4 edits */
+h4 {
+    color: var(--primary-color, var(--fallback-color));
+}
+
+/* Color button */
+button {
+    color: #1c831c; 
+    background-color: #3131bc;
+    font-size: 2rem;
+}
+
+/* Change up the header */
+#title {
+    color: color(display-p3 0.4 0.2 0.8);
+    width: 100vw;
+}
