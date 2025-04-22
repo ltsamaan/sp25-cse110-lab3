@@ -2,9 +2,9 @@
 /*************************/
 
 /* Edit the body */
-/* body {
+body {
     background-color: lightcyan;
-}*/
+}
 
 /* Using CSS Variables with Fallback */
 :root {
