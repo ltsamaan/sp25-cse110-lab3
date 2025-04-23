@@ -1,6 +1,39 @@
 /* Start of my css file! */
 /*************************/
 
+/* universal selector */
+* {
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    border: 2px solid teal;
+    padding: 5px;
+}
+
+ul > li {
+    list-style-type: square;
+}
+
+h2 ~ p {
+    font-size: 1.1rem;
+    color: darkblue;
+}
+
+h3 + p {
+    margin-top: 0;
+    font-style: italic;
+}
+
+section.text-style {
+    background-color: yellow;
+}
+
+footer:has(audio) {
+    border: 2px solid orange;
+    padding: 10px;
+}
+
 /* Edit the body */
 body {
     position: static;
@@ -43,7 +76,6 @@ button {
 
 /* Change up the header */
 #title {
-    color: color(display-p3 0.4 0.2 0.8);
     height: 20vw;
     width: 100vw;
 }
@@ -64,6 +96,10 @@ button {
 .container2 {
     margin: 20px 15px 50px auto;
     padding: 10px 20px 15px 5px;
+}
+
+.container2 p {
+    color: darkgoldenrod;
 }
 
 /* borders! */
@@ -122,7 +158,7 @@ button {
     display: grid;
     justify-items: center;
     grid-template-rows: auto;
-    border-radius: 5;
+    border-radius: 5px;
 }
 
 /* responsiveness on other devices */
@@ -193,3 +229,14 @@ button {
         gap: 10px;
     }
 }
+
+/* change font of flappy title */
+.noto-sans-mandaic {
+    font-family: "Noto Sans Mandaic", sans-serif;
+}
+  
+.playwrite-au-sa {
+    font-family: "Playwrite AU SA", sans-serif;
+}
+  
+
