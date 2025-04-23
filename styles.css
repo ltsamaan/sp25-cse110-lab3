@@ -124,3 +124,72 @@ button {
     grid-template-rows: auto;
     border-radius: 5;
 }
+
+/* responsiveness on other devices */
+/* Tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    h2, h3, h4 {
+        text-align: center;
+    }
+
+    .container, .container2, .border-box, .text-style {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    #title {
+        height: auto;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+/* Phone (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.2rem;
+    }
+
+    .inline {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .text-style {
+        font-size: 1rem;
+    }
+
+    .border-box {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .flex-container {
+        gap: 10px;
+    }
+}
